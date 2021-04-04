@@ -1,0 +1,202 @@
+#main {
+  width: 100%;
+  height: 100%;
+  background-color: orange;
+}
+
+h1 {
+  text-transform: uppercase;
+  transform: rotate(-2deg);
+  padding: 0.2em 0.1em;
+}
+
+div {
+  transform: rotate(2deg);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+#juego {
+  transform: rotate(-2deg);
+  background-color: yellow;
+  font-size: 130%;
+  padding: 0.5em;
+}
+
+p {
+  padding: 1em;
+}
+
+.gamer {
+  font-family: 'helvetica neue', helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid rgba(231, 37, 63, 0.6);
+  background: rgba(231, 37, 63, 0.3);
+  color: rgba(0, 0, 0, 0.6);
+  box-shadow: 1px 1px 2px rgba(231, 37, 63, 0.4);
+  border-radius: 10px;
+  padding: 3px 10px;
+  display: inline-block;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  margin-left: 2em;
+}
+
+.caja {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  background: #ee0467;
+  display: inline-block;
+}
+
+.triangulo {
+  width: 0;
+  height: 0;
+  border-left: 100px solid #d9534f;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+
+  box-shadow: none;
+  transform: none;
+  margin: 1em;
+}
+
+.triangulo2 {
+  width: 0;
+  height: 0;
+  border-right: 50px solid transparent;
+  border-top: 50px solid transparent;
+  border-left: 50px solid #d9534f;
+  border-bottom: 50px solid #d9534f;
+
+  box-shadow: none;
+  transform: none;
+  margin: 1em;
+}
+
+.triangulo3 {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid #d9534f;
+
+  box-shadow: none;
+  transform: none;
+  margin: 1em;
+}
+
+.circulo {
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #d9534f;
+
+  box-shadow: none;
+  transform: none;
+  margin: 1em;
+}
+
+.oval2 {
+  width: 250px;
+  height: 100px;
+  -moz-border-radius: 0 50% / 0 100%;
+  -webkit-border-radius: 0 50% / 0 100%;
+  border-radius: 0 50% / 0 100%;
+  background: #d9534f;
+  /*border: 3px solid #555;*/
+
+  box-shadow: none;
+  transform: none;
+  margin: 1em;
+}
+
+.bandera {
+  width: 0px;
+  height: 120px;
+  border-left: 50px solid #d9534f;
+  border-right: 50px solid #d9534f;
+  border-bottom: 35px solid transparent;
+
+  box-shadow: none;
+  transform: none;
+  margin: 1em;
+}
+
+.circulovacio {
+  font-size: 10em;
+  display: inline-block;
+  width: 0.4em;
+  box-sizing: content-box;
+  height: 0.4em;
+  border: 0.1em solid #d9534f;
+  position: relative;
+  border-radius: 0.35em;
+
+  box-shadow: none;
+  transform: none;
+}
+
+.corazon {
+  position: relative;
+  width: 100px;
+  height: 90px;
+
+  box-shadow: none;
+  transform: none;
+  margin: 1em;
+}
+.corazon:before,
+.corazon:after {
+  position: absolute;
+  content: '';
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: #d9534f;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+.corazon:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.lupa {
+  font-size: 10em;
+  display: inline-block;
+  width: 0.4em;
+  box-sizing: content-box;
+  height: 0.4em;
+  border: 0.1em solid #d9534f;
+  position: relative;
+  border-radius: 0.35em;
+}
+.lupa:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  right: -0.25em;
+  bottom: -0.1em;
+  border-width: 0;
+  background: #d9534f;
+  width: 0.35em;
+  height: 0.08em;
+  transform: rotate(45deg);
+}
+
+.validated:invalid {
+  background-color: red;
+}
+
+.validated:valid {
+  border: 3px solid green;
+}
